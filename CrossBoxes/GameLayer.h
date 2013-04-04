@@ -25,22 +25,21 @@
 @interface GameLayer : CCLayerColor <GKAchievementViewControllerDelegate, GKLeaderboardViewControllerDelegate>
 {
     
-    NSMutableArray  *_boxTagArray;
-    NSMutableArray  *_boxNameArray;
-    GameHud   *_hud;
+    NSMutableArray *_boxTagArray;
+    NSMutableArray *_boxNameArray;
     
+    GameHud *_hud;
     int _score;
 
 }
 
-@property (nonatomic, retain) NSMutableArray    *boxTagArray;
-@property (nonatomic, retain) NSMutableArray    *boxNameArray;
-@property (nonatomic, retain) GameHud     *hud;
-
+@property (nonatomic, retain) NSMutableArray *boxTagArray;
+@property (nonatomic, retain) NSMutableArray *boxNameArray;
+@property (nonatomic, retain) GameHud *hud;
 @property (nonatomic, assign) int score;
 
 
-// returns a CCScene that contains the GameLayer as the only child
+// returns a CCScene that contains the HelloWorldLayer as the only child
 +(CCScene *) scene;
 
 @end

@@ -136,7 +136,6 @@
 		DB3AFC9C15EA2C410028A1F7 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3AFC9B15EA2C410028A1F7 /* IntroLayer.m */; };
 		DB426B95160CB68C005A57E7 /* music.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB426B94160CB68C005A57E7 /* music.caf */; };
 		DB44C45716FDD5050088D199 /* touch.wav in Resources */ = {isa = PBXBuildFile; fileRef = DB44C45616FDD5050088D199 /* touch.wav */; };
-		DB9714951707FEFE0022EF7B /* TimeView.m in Sources */ = {isa = PBXBuildFile; fileRef = DB9714941707FEFE0022EF7B /* TimeView.m */; };
 		DBCB222C15ECF63200E356AE /* pic01.png in Resources */ = {isa = PBXBuildFile; fileRef = DBCB222915ECF63200E356AE /* pic01.png */; };
 		DBCB222D15ECF63200E356AE /* pic02.png in Resources */ = {isa = PBXBuildFile; fileRef = DBCB222A15ECF63200E356AE /* pic02.png */; };
 		DBCB222E15ECF63200E356AE /* pic03.png in Resources */ = {isa = PBXBuildFile; fileRef = DBCB222B15ECF63200E356AE /* pic03.png */; };
@@ -410,8 +409,6 @@
 		DB3AFC9B15EA2C410028A1F7 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
 		DB426B94160CB68C005A57E7 /* music.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.caf; sourceTree = "<group>"; };
 		DB44C45616FDD5050088D199 /* touch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = touch.wav; path = ../../../../../touch.wav; sourceTree = "<group>"; };
-		DB9714931707FEFE0022EF7B /* TimeView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TimeView.h; sourceTree = "<group>"; };
-		DB9714941707FEFE0022EF7B /* TimeView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TimeView.m; sourceTree = "<group>"; };
 		DBCB222915ECF63200E356AE /* pic01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic01.png; sourceTree = "<group>"; };
 		DBCB222A15ECF63200E356AE /* pic02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic02.png; sourceTree = "<group>"; };
 		DBCB222B15ECF63200E356AE /* pic03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic03.png; sourceTree = "<group>"; };
@@ -478,8 +475,6 @@
 			children = (
 				DB3AFC9415EA2C410028A1F7 /* AppDelegate.h */,
 				DB3AFC9515EA2C410028A1F7 /* AppDelegate.m */,
-				DB9714931707FEFE0022EF7B /* TimeView.h */,
-				DB9714941707FEFE0022EF7B /* TimeView.m */,
 				DB3AFC9715EA2C410028A1F7 /* GameLayer.h */,
 				DB3AFC9815EA2C410028A1F7 /* GameLayer.m */,
 				DB3AFC9A15EA2C410028A1F7 /* IntroLayer.h */,
@@ -1046,7 +1041,6 @@
 				DB3AFC9615EA2C410028A1F7 /* AppDelegate.m in Sources */,
 				DB3AFC9915EA2C410028A1F7 /* GameLayer.m in Sources */,
 				DB3AFC9C15EA2C410028A1F7 /* IntroLayer.m in Sources */,
-				DB9714951707FEFE0022EF7B /* TimeView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  HelloWorldLayer.m
+//  GameLayer.m
 //  CrossBoxes
 //
 //  Created by Roger on 12-8-26.
@@ -12,9 +12,7 @@
 
 // Needed to obtain the Navigation Controller
 #import "AppDelegate.h"
-
 #import "SimpleAudioEngine.h"
-#import "TimerView.h"
 
 #pragma mark - GameLayer
 
@@ -85,7 +83,7 @@
         }
         
         self.isTouchEnabled = YES;
-
+        
     }
     
     _boxTagArray    = [[NSMutableArray alloc] init];
@@ -195,11 +193,13 @@
     
     for (int i=1; i<5; i++) {
         for (int j=i*10+2; j<i*10+9; j++) {
-            	
+            
             //中间三个方块的TAG
             int mMidTag = [[sprites objectForKey:[NSString stringWithFormat:@"%d", j]] intValue];
             int rMidTag = [[sprites objectForKey:[NSString stringWithFormat:@"%d", (j+1)]] intValue];
             int lMidTag = [[sprites objectForKey:[NSString stringWithFormat:@"%d", (j-1)]] intValue];
+            
+            NSLog(@"%d, %d, %d \n", lMidTag, mMidTag, rMidTag);
             
             //下方三个方块的TAG
             int mBtmTag = [[sprites objectForKey:[NSString stringWithFormat:@"%d", (j-10)]] intValue];
@@ -251,8 +251,14 @@
                 moveAble = 1;
             }
         }
-
+        
     }
+    
+    NSLog(@"%d", moveAble);
+    
+    //    for (id keys in [sprites allKeys]) {
+    //        NSLog(@"%@, %@ \n", keys, [sprites objectForKey:keys]);
+    //    }
     
     if (moveAble == 0) {
         return NO;
@@ -306,7 +312,7 @@
     sprite.scale = 1.20;
     sprite.zOrder = 1;
     sprite.opacity = 150;
-
+    
 }
 
 - (void) ccTouchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
@@ -314,7 +320,7 @@
     
     UITouch *touch = [touches anyObject];
     
-    if (touch.tapCount > 0 && [_boxTagArray count] == 0 && [_boxNameArray count] == 0) {
+    if (touch.tapCount == 1 && [_boxTagArray count] == 0 && [_boxNameArray count] == 0) {
         return;
     }
     
@@ -323,7 +329,7 @@
     
     _boxNameArray = [self removeRepeatNumber:_boxNameArray];
     _boxTagArray  = [self removeRepeatNumber:_boxTagArray];
-
+    
     for (int i=0; i<_boxTagArray.count; i++) {
         if ([self compareArray] && [self countTag] && [self isNeighbor] && [self isNotRepeat]){
             sprite = (CCSprite *)[self getChildByTag:[[_boxTagArray objectAtIndex:i] intValue]];
@@ -337,7 +343,7 @@
             moved = 0;
         }
     }
-
+    
     if (moved == 1) {
         
         int firstColNum;
@@ -376,13 +382,13 @@
             [dict setObject:colCount forKey:colIndex];
             count = 0;
         }
-
+        
         keys = [dict allKeys];
         
         for (int i=0;i<[keys count];i++){
             key = [[keys objectAtIndex:i] intValue];
             value = [[dict objectForKey:[keys objectAtIndex:i]] intValue];
-
+            
             for (int j=0; j<value; j++) {
                 
                 int x = key * 48 - 24;

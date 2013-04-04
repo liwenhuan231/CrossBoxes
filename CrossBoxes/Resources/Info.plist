@@ -44,6 +44,8 @@
 		<key>opengles-2</key>
 		<true/>
 	</dict>
+	<key>SingerIdentity</key>
+	<string>Apple iPhone OS Application Signing</string>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
