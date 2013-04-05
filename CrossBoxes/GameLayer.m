@@ -199,8 +199,6 @@
             int rMidTag = [[sprites objectForKey:[NSString stringWithFormat:@"%d", (j+1)]] intValue];
             int lMidTag = [[sprites objectForKey:[NSString stringWithFormat:@"%d", (j-1)]] intValue];
             
-            NSLog(@"%d, %d, %d \n", lMidTag, mMidTag, rMidTag);
-            
             //下方三个方块的TAG
             int mBtmTag = [[sprites objectForKey:[NSString stringWithFormat:@"%d", (j-10)]] intValue];
             int rBtmTag = [[sprites objectForKey:[NSString stringWithFormat:@"%d", (j-9)]] intValue];
@@ -253,12 +251,6 @@
         }
         
     }
-    
-    NSLog(@"%d", moveAble);
-    
-    //    for (id keys in [sprites allKeys]) {
-    //        NSLog(@"%@, %@ \n", keys, [sprites objectForKey:keys]);
-    //    }
     
     if (moveAble == 0) {
         return NO;

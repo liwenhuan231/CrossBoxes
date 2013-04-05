@@ -135,7 +135,7 @@
 		DB3AFC9915EA2C410028A1F7 /* GameLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3AFC9815EA2C410028A1F7 /* GameLayer.m */; };
 		DB3AFC9C15EA2C410028A1F7 /* IntroLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = DB3AFC9B15EA2C410028A1F7 /* IntroLayer.m */; };
 		DB426B95160CB68C005A57E7 /* music.caf in Resources */ = {isa = PBXBuildFile; fileRef = DB426B94160CB68C005A57E7 /* music.caf */; };
-		DB44C45716FDD5050088D199 /* touch.wav in Resources */ = {isa = PBXBuildFile; fileRef = DB44C45616FDD5050088D199 /* touch.wav */; };
+		DB507FCD170ED6B40037A772 /* touch.wav in Resources */ = {isa = PBXBuildFile; fileRef = DB507FCC170ED6B40037A772 /* touch.wav */; };
 		DBCB222C15ECF63200E356AE /* pic01.png in Resources */ = {isa = PBXBuildFile; fileRef = DBCB222915ECF63200E356AE /* pic01.png */; };
 		DBCB222D15ECF63200E356AE /* pic02.png in Resources */ = {isa = PBXBuildFile; fileRef = DBCB222A15ECF63200E356AE /* pic02.png */; };
 		DBCB222E15ECF63200E356AE /* pic03.png in Resources */ = {isa = PBXBuildFile; fileRef = DBCB222B15ECF63200E356AE /* pic03.png */; };
@@ -408,7 +408,7 @@
 		DB3AFC9A15EA2C410028A1F7 /* IntroLayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = IntroLayer.h; sourceTree = "<group>"; };
 		DB3AFC9B15EA2C410028A1F7 /* IntroLayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = IntroLayer.m; sourceTree = "<group>"; };
 		DB426B94160CB68C005A57E7 /* music.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = music.caf; sourceTree = "<group>"; };
-		DB44C45616FDD5050088D199 /* touch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = touch.wav; path = ../../../../../touch.wav; sourceTree = "<group>"; };
+		DB507FCC170ED6B40037A772 /* touch.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = touch.wav; path = ../../../../touch.wav; sourceTree = "<group>"; };
 		DBCB222915ECF63200E356AE /* pic01.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic01.png; sourceTree = "<group>"; };
 		DBCB222A15ECF63200E356AE /* pic02.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic02.png; sourceTree = "<group>"; };
 		DBCB222B15ECF63200E356AE /* pic03.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pic03.png; sourceTree = "<group>"; };
@@ -489,6 +489,7 @@
 		DB3AFB1D15EA2C3F0028A1F7 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DB507FCC170ED6B40037A772 /* touch.wav */,
 				DB3AFB2015EA2C3F0028A1F7 /* Default-Landscape~ipad.png */,
 				DB3AFB1E15EA2C3F0028A1F7 /* Default.png */,
 				DB3AFB2415EA2C400028A1F7 /* fps_images-hd.png */,
@@ -502,7 +503,6 @@
 				DB3AFB3215EA2C400028A1F7 /* Icon@2x.png */,
 				DB3AFB3415EA2C400028A1F7 /* Info.plist */,
 				DB3AFB3515EA2C400028A1F7 /* iTunesArtwork */,
-				DB44C45616FDD5050088D199 /* touch.wav */,
 				DB426B94160CB68C005A57E7 /* music.caf */,
 				DBCB222915ECF63200E356AE /* pic01.png */,
 				DBCB222A15ECF63200E356AE /* pic02.png */,
@@ -926,7 +926,7 @@
 				DBCB223315ECF63800E356AE /* pic04.png in Resources */,
 				DB426B95160CB68C005A57E7 /* music.caf in Resources */,
 				DB33B1891610AE32004FF679 /* Default-568h@2x.png in Resources */,
-				DB44C45716FDD5050088D199 /* touch.wav in Resources */,
+				DB507FCD170ED6B40037A772 /* touch.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
